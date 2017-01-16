@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  calories: 1
+  carbohydrates: MyString
+  levels: MyString
+  extra: MyString
+  foodlog: one
+
+two:
+  calories: 1
+  carbohydrates: MyString
+  levels: MyString
+  extra: MyString
+  foodlog: two

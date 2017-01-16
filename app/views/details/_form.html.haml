@@ -1,0 +1,7 @@
+= simple_form_for([@foodlog, @foodlog.details.build]) do |f|
+	= f.input :calories, input_html: { class: "form-control"}
+	= f.input :carbohydrates, input_html: { class: "form-control"}
+	= f.input :levels, input_html: { class: "form-control"}
+	= f.input :extra, input_html: { class: "form-control"}
+	%br/
+	= f.button :submit

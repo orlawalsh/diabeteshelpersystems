@@ -5,6 +5,13 @@
 	%p= @foodlog.mood
 	%p= @foodlog.level
 
+#details
+	%h2 Details
+	= render @foodlog.details
+	%h3 Add more details about your meal
+	=render "details/form"
+
+
 	= link_to "Back", root_path 
 	|
 	= link_to "Edit", edit_foodlog_path(@foodlog)

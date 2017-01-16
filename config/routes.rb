@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
-  resources :foodlogs
+  resources :foodlogs do
+  	resources :details
+  end
   root 'foodlogs#index'
 end
