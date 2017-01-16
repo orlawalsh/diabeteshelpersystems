@@ -1,3 +1,3 @@
 - @foodlogs.each do |foodlog|
-	%h2= link_to foodlog.date, foodlog
+	%h2= link_to foodlog.date.strftime("%A %b %d %H:%M %p"), foodlog
 	%h3= foodlog.mealtype
