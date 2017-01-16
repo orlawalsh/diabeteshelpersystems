@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date: 2017-01-16 18:31:52
+  mealtype: MyString
+  meal: MyString
+  mood: MyString
+  level: MyString
+
+two:
+  date: 2017-01-16 18:31:52
+  mealtype: MyString
+  meal: MyString
+  mood: MyString
+  level: MyString
