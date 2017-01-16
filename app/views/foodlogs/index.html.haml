@@ -1,1 +1,3 @@
-%h1 this works
+- @foodlogs.each do |foodlog|
+	%h2= link_to foodlog.date, foodlog
+	%h3= foodlog.mealtype

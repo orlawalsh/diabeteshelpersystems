@@ -2,6 +2,7 @@ class FoodlogsController < ApplicationController
 	before_action :find_foodlog, only: [:show, :edit, :update, :destroy]
 
 	def index
+		@foodlogs = Foodlog.all.order("created_at DESC")
 	end
 
 	def show
