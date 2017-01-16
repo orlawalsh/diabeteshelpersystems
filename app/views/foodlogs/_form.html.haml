@@ -1,0 +1,8 @@
+= simple_form_for(@foodlog, html:{class: 'form-horizontal'}) do |f|
+	= f.input :date, label: "Date"
+	= f.input :mealtype, label: "What meal is this?", input_html: {class: "form-control"}
+	= f.input :meal, label: "Describe your meal", input_html: {class: "form-control"}
+	= f.input :mood, label: "How are you feeling?", input_html: {class: "form-control"}
+	= f.input :level, label: "What are your glucose levels?", input_html: {class: "form-control"}
+	%br
+	= f.button :submit 
