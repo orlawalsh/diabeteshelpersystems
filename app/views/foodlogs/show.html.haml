@@ -5,3 +5,9 @@
 	%p= @foodlog.mood
 	%p= @foodlog.level
 
+	= link_to "Back", root_path 
+	|
+	= link_to "Edit", edit_foodlog_path(@foodlog)
+	|
+	= link_to "Delete", foodlog_path(@foodlog), method: :delete, data: {confirm: "Are you sure you want to delete this?"}
+

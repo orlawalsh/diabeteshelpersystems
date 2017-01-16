@@ -26,9 +26,16 @@ class FoodlogsController < ApplicationController
 	end
 
 	def update
+		if @foodlog.update(foodlog_params)
+			redirect_to @foodlog
+		else
+			render 'edit'
+		end
 	end
 
 	def destroy
+		@foodlog.destroy
+		redirect_to root_path
 	end
 
 	private 
