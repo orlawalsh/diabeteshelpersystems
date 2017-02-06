@@ -7,6 +7,8 @@
 	= csrf_meta_tags
 
 %body
+	%p.notice= notice
+	%p.alert= alert
 	%nav.navbar.navbar-default
 		.container
 			.navbar-header
@@ -14,4 +16,5 @@
 			.nav.navbar-nav.navbar-right
 				= link_to "New Food Log", new_foodlog_path, class: "nav navbar-link"
 	.container
+
 		= yield

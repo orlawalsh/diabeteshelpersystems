@@ -10,11 +10,11 @@ class FoodlogsController < ApplicationController
 	end
 
 	def new
-		@foodlog = Foodlog.new
+		@foodlog = current_user.foodlogs.build
 	end
 
 	def create
-		@foodlog = Foodlog.new(foodlog_params)
+		@foodlog = current_user.foodlogs.build(foodlog_params)
 		if @foodlog.save
 			redirect_to @foodlog
 		else
