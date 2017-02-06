@@ -166,7 +166,6 @@ PLATFORMS
 
 DEPENDENCIES
   bootstrap-sass (~> 3.3, >= 3.3.7)
-  byebug
   coffee-rails (~> 4.2)
   devise (~> 4.2)
   haml (~> 4.0, >= 4.0.7)
