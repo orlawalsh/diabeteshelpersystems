@@ -13,6 +13,7 @@ gem 'devise', '~> 4.2'
 gem 'jquery-rails'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
+gem 'tzinfo-data', '~> 1.2016', '>= 1.2016.10'
 
 group :development, :test do
   gem 'sqlite3'
